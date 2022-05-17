@@ -1,0 +1,48 @@
+a 태그는 하이퍼 링크를 정의한다. href 속성은 링크로 이동 페이지의 URL을
+지정한다.
+<a href="http://www.naver.com">네이버로이동하기</a>
+tag에 추가적인 정보를 주는 것을 attribute(속성)이라고 한다.
+
+<!-- 속성을 쓴느 문법 -->
+<!-- 적을 수는 있지만 브라우저는 애해 못한다. -->
+<h1 myNews="first Title">Title</h1>
+<!-- h1 태그에 href 추가적인 정보를 추가하더라도 이해하지 못한다. -->
+<h1 href="http://www.naver.com">Title</h1>
+
+<!-- 올바른 택을 올바른 위치에 작성해야한다. -->
+<!-- 띄어쓰기도 중요 붙여서 쓰면 브라우저가 인지 할 수 없음. -->
+
+<a href="http://www.naver.com" target="_self">네이버</a>
+<a href="http://www.naver.com" target="_blank">네이버</a>
+
+<img />
+<!-- 이미지는 자기자신이 content이기 때문에 self 클로징 -->
+
+<img
+  src="https://ssl.pstatic.net/tveta/libs/1382/1382386/d5b076b865c103426a3c_20220510173750210.png"
+/>
+
+<h1
+  src="https://ssl.pstatic.net/tveta/libs/1382/1382386/d5b076b865c103426a3c_20220510173750210.png"
+></h1>
+<!-- 브라우저는 이해하지 못함 -->
+
+<img src="../img/logo.png" />
+
+<!-- 
+    절대 경로 
+    파일 경로를 찾을 때 직접적인 경로를 그대로 적는 방식을 말한다.
+    <img src="https://ssl.pstatic.net/tveta/libs/1382/1382386/d5b076b865c103426a3c_20220510173750210.png"
+/>
+
+<img src="C:devnote/image/logo.png"/>
+
+    상대 경로
+    상대 경로란 파일 경로를 찾을 때, 경로를 찾는 파일의 기준으로 찾는 방식인데 예를 들어 home2.html파일 안에 
+    <img src="logo.png"/> -> 같은 경로일 때
+
+    상대경로를 지정하는 방식 
+    상위 경로 : ..
+    현재폴더 : ./ or "(아무것도 적지 않으면)" 
+    하위폴더 : 하위폴더명/
+ -->
