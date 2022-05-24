@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        margin: 50px;
+      }
+
+      div {
+        height: 300px;
+        width: 300px;
+        background-color: beige;
+        position: relative;
+      }
+      .green {
+        background-color: cadetblue;
+        height: 100px;
+        width: 100px;
+        bottom: 0px;
+        right: 0px;
+        position: absolute;
+        /* 
+           absolute를 사용할 때 부모 position이 static 이면 최상위를 기준으로, relative면 부모 클래스를 기준으로 위치한다.
+
+           absolute는 부모 위젯이 relative 기준으로 설정이된다.
+           만약에 부모 위젯이 static이면 body 기준으로 움직이게 된다.
+        */
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="green"></div>
+    </div>
+  </body>
+</html>
