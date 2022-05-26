@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0px;
+        height: 100vh;
+        margin: 50px;
+      }
+      span {
+        color: tomato;
+        padding: 5px;
+      }
+      p span {
+        color: greenyellow; /* 자손 결합자*/
+      }
+      div p span {
+        background-color: green;
+      }
+      div > span {
+        text-decoration: underline;
+      }
+
+      p + address {
+        margin: 0 20px;
+        background-color: skyblue;
+      }
+
+      p ~ address {
+        margin: 0 20px;
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <span>hello</span>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam ea
+        officiis temporibus voluptate similique ut quaerat voluptas
+        exercitationem, quia esse iure quidem sed ratione nostrum provident
+        tenetur laborum voluptatem <span>voluptatibus.</span>
+      </p>
+      <address>부산시 진구</address>
+      <address>부산시 수영구</address>
+      <span>hello</span>
+    </div>
+  </body>
+</html>
